@@ -1,5 +1,5 @@
 # ExtractAllSingleTrees
-Extract all individual trees from a forest/orchard.
+Extract all individual trees from a forest/orchard pointclouds.
 
 ## Build
 
@@ -15,13 +15,13 @@ although so far we have only tested it on Windows.
 
 - On Windows with Microsoft Visual Studio, use the `x64 Native Tools Command Prompt for VS XXXX` (**don't** use the
   x86 one), then
-      ```
-      $ cd path-to-root-dir-of-this project
-      $ mkdir Release
-      $ cd Release
-      $ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release ..
-      $ ninja
-      ```
+  ```
+  $ cd path-to-root-dir-of-this project
+  $ mkdir Release
+  $ cd Release
+  $ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release ..
+  $ ninja
+  ```
 
 ## Usage
 
