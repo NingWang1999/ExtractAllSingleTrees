@@ -8,7 +8,7 @@ The current implementation depends on the [Point Cloud Library (PCL)](https://po
 Please install [PCL](https://pointclouds.org/downloads/#cross-platform) (and its dependencies) first.
 
 To build this project, you need [CMake](https://cmake.org/download/) (`>= 3.12`) and a compiler that
-supports `>= C++14`.
+supports `>= C++17`.
 With CMake, this project can be built on almost all platforms, 
 although so far we have only tested it on Windows.
 
