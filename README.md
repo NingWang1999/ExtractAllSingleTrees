@@ -22,17 +22,19 @@ although so far we have only tested it on Windows.
   $ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release ..
   $ ninja
   ```
-
+  
 ## Usage
 
 The [main.cpp](./makedataset/main.cpp) file demonstrates how to use it. 
-To register a "source" forest point cloud to a "target" one, run the built executable like this:
+To process raw forest or orchard point cloud data and extract individual trees, run the built executable like this:
 ```commandline
-./MakeDataset.exe  <source_scan_ply_file>  <target_scan_ply_file>
+./MakeDataset.exe <raw_data_folder> <rough_data_folder>
 ```
-- `<source_scan_ply_file>` and `<target_scan_ply_file>` specify the path to the input point cloud **ply** files (**order matters**: source filename comes first)
-- `<output_matrix_txt_file>` specifies the filename to save the estimated 4 by 4 transformation matrix
+- `<raw_data_folder>` specifies the directory containing the original PCD files (e.g., LiDAR scans of forests).
+- `<rough_data_folder>` specifies the output directory where the processed tree-extracted PCD files will be saved.
+- This will process all `.pcd` files in the `raw_data_folder` directory, extract individual trees, and save the results in `rough_data_folder`.
 
-
+## References & Acknowledgments
+This project is based on the original open-source project [GlobalMatch](https://github.com/zexinyang/GlobalMatch). Many thanks to the original author for their valuable contributions!
 
 
