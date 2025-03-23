@@ -1,5 +1,5 @@
 # ExtractAllSingleTrees
-Extract all individual trees from a forest/orchard pointclouds.
+Rough Extraction of All individual Trees from a forest/orchard.
 
 ## Build
 
